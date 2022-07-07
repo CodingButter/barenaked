@@ -57,7 +57,7 @@ function bare_naked_theme_register_required_plugins()
 		array(
 			'name'      => 'Advanced Custom Fields Pro',
 			'slug'      => 'advanced-custom-fields-pro',
-			'source'    => 'https://github.com/wp-premium/advanced-custom-fields-pro',
+			'source'    => get_template_directory() . '/lib/plugins/advanced-custom-fields-pro.zip',
 			'required'     => true
 		),
 
