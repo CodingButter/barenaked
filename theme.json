@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "settings": {
+    "layout": {
+      "contentSize": "1280px",
+      "wideSize": "1280px"
+    },
+
+    "spacing": [
+      {
+        "name": "Smallest",
+        "slug": "xxs",
+        "size": "1px"
+      },
+      {
+        "name": "Smaller",
+        "slug": "xs",
+        "size": "4px"
+      },
+      {
+        "name": "Small",
+        "slug": "sm",
+        "size": "8px"
+      },
+      {
+        "name": "Medium",
+        "slug": "md",
+        "size": "12px"
+      },
+      {
+        "name": "Large",
+        "slug": "lg",
+        "size": "18px"
+      },
+      {
+        "name": "Larger",
+        "slug": "xl",
+        "size": "24px"
+      },
+      {
+        "name": "Largest",
+        "slug": "xxl",
+        "size": "28px"
+      }
+    ],
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "rgba(var(--primary) , <alpha-value>)",
+          "default": "#175164"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "rgba(var(--secondary) , <alpha-value>)",
+          "default": "#447B83"
+        },
+        {
+          "name": "Light",
+          "slug": "light",
+          "color": "rgba(var(--light) , <alpha-value>)",
+          "default": "#F8F7F1"
+        },
+        {
+          "name": "Accent",
+          "slug": "accent",
+          "color": "rgba(var(--accent) , <alpha-value>)",
+          "default": "#FFA25F"
+        },
+        {
+          "name": "White",
+          "slug": "white",
+          "color": "rgba(var(--white) , <alpha-value>)",
+          "default": "#FFFFFF"
+        },
+        {
+          "name": "Black",
+          "slug": "black",
+          "color": "rgba(var(--black) , <alpha-value>)",
+          "default": "#050505"
+        },
+        {
+          "name": "Hover",
+          "slug": "hover",
+          "color": "rgba(var(--hover) , <alpha-value>)",
+          "default": "#233235"
+        }
+      ]
+    },
+    "typography": {
+      "lineHeight": [
+        {
+          "name": "Tightest",
+          "slug": "tighter",
+          "size": "15px"
+        },
+        {
+          "name": "Tight",
+          "slug": "tight",
+          "size": "18px"
+        },
+        {
+          "name": "Normal",
+          "slug": "normal",
+          "size": "24px"
+        },
+        {
+          "name": "Loose",
+          "slug": "loose",
+          "size": "32px"
+        },
+        {
+          "name": "Looser",
+          "slug": "looser",
+          "size": "40px"
+        },
+        {
+          "name": "Loosest",
+          "slug": "loosest",
+          "size": "50px"
+        }
+      ],
+      "fontSizes": [
+        { "name": "xs", "slug": "xs", "size": "10px" },
+        { "name": "sm", "slug": "sm", "size": "12px" },
+        { "name": "tiny", "slug": "tiny", "size": "14px" },
+        { "name": "md", "slug": "md", "size": "16px" },
+        { "name": "lg", "slug": "lg", "size": "18px" },
+        { "name": "xl", "slug": "xl", "size": "20px" },
+        { "name": "2xl", "slug": "2xl", "size": "24px" },
+        { "name": "3xl", "slug": "3xl", "size": "28px" },
+        { "name": "4xl", "slug": "4xl", "size": "32px" },
+        { "name": "5xl", "slug": "5xl", "size": "36px" },
+        { "name": "6xl", "slug": "6xl", "size": "40px" },
+        { "name": "h1", "slug": "h1", "size": "40px" },
+        { "name": "7xl", "slug": "7xl", "size": "44px" }
+      ]
+    }
+  }
+}

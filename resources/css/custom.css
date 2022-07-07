@@ -1,0 +1,38 @@
+*{
+    font-family: 'Inter',"Roboto", sans-serif;
+}
+.entry-content > * {
+ 
+    @apply mx-auto max-w-content;
+    
+} 
+body:not(.home) .entry-content > section:first-child > .padded-element{
+    padding-top:158px !important;
+}
+
+.entry-content, .block-editor-block-list__layout {
+   
+    p, ul, ol {
+        a {
+            @apply text-blue-500 underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
