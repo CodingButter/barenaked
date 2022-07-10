@@ -23,6 +23,8 @@ include_once('functions/required-plugins.php');
 
 include_once('functions/acf-options-pages.php');
 
+include_once('functions/add-acf-groups.php');
+
 include_once('functions/responsive-images.php');
 
 include_once('functions/color-palette.php');
