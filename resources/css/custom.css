@@ -1,11 +1,10 @@
-*{
-    font-family: 'Inter',"Roboto", sans-serif;
-}
 .entry-content > * {
  
-    @apply mx-auto max-w-content;
-    
+    @apply mx-auto max-w-content px-10;
+    -webkit-box-pack: justify;
 } 
+
+
 body:not(.home) .entry-content > section:first-child > .padded-element{
     padding-top:158px !important;
 }
@@ -35,4 +34,16 @@ body:not(.home) .entry-content > section:first-child > .padded-element{
             @apply list-decimal list-inside;
         }
     }
+}
+.post:hover .project-featured-image {
+    opacity: 0.1;
+    transform: scale(1.1);
+}
+
+.post:hover .dark-overlay {
+    opacity: 0.1;
+}
+
+.post:hover h1 {
+    color: black;
 }

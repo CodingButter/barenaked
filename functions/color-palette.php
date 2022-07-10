@@ -41,7 +41,7 @@ function barenaked_customize_css()
     $palette = $themeManager->getColors();
 
 ?>
-    <style type="text/css" data-name="Custome Theme Colors">
+    <style type="text/css" data-name="Custom Theme Colors">
         @layer base {
             :root {
                 <?php
@@ -58,5 +58,6 @@ function barenaked_customize_css()
     </style>
 <?php
 }
+
 add_action('admin_head', 'barenaked_customize_css');
 add_action('wp_head', 'barenaked_customize_css');

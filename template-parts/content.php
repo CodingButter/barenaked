@@ -1,37 +1,35 @@
 <?php $theme_path = get_template_directory(); ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('mb-12 h-full'); ?>>
 
-	<?php if (is_search() || is_archive()) : ?>
 
-		<header class="entry-header mb-4">
-			<?php the_title(sprintf('<h2 class="entry-title text-2xl md:text-3xl font-extrabold leading-tight mb-1"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-			<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="text-sm text-gray-700"><?php echo get_the_date(); ?></time>
-		</header>
-
-		<div class="entry-summary">
-			<?php the_excerpt(); ?>
+<?php if (is_search() || is_archive()) : ?>
+	<?php $background_image = get_post_thumbnail_id(); ?>
+	<?php $post_url = get_permalink(); ?>
+	<a href="<?= $post_url; ?>" class='post ease-out delay-100 transition-all duration-500 text-white p-2 flex-grow relative w-full flex aspect-[9/5] sm:w-1/2'>
+		<div class="w-full h-full transition-all ease-out delay-100 duration-500 relative flex flex-col justify-end rounded shadow overflow-hidden hover:shadow-md ">
+			<div class="dark-overlay transition-all delay-100 duration-500 z-10 w-full h-full absolute top-0 left-0 bg-gradient-to-t from-black/80 to-transparent via-black/40"></div>
+			<img class="z-0 project-featured-image will-change-auto object-cover transition-all ease-out delay-100 duration-500 lazyload w-full h-full absolute top-0 right-0" id="post-<?= get_the_ID() ?>" <?php responsive_img($background_image); ?> />
+			<div class='z-10 w-full h-full absolute top-0 left-0 flex flex-col justify-end items-center'>
+				<h3 class="text-4xl duration-500 transition-all delay-100 text-center break-words font-bold"><?php the_title(); ?></h3>
+			</div>
 		</div>
-
-	<?php else : ?>
-
-		<div class="entry-content h-full w-full flex flex-col">
-			<?php
-			include("$theme_path/page-objects/flexible-content/main-flexible-content.php");
+	</a>
+<?php else : ?>
 
 
-			wp_link_pages(
-				array(
-					'before'      => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'tailpress') . '</span>',
-					'after'       => '</div>',
-					'link_before' => '<span>',
-					'link_after'  => '</span>',
-					'pagelink'    => '<span class="screen-reader-text">' . __('Page', 'tailpress') . ' </span>%',
-					'separator'   => '<span class="screen-reader-text">, </span>',
-				)
-			);
-			?>
-		</div>
+	<?php
+	include("$theme_path/page-objects/flexible-content/main-flexible-content.php");
 
-	<?php endif; ?>
 
-</article>
+	wp_link_pages(
+		array(
+			'before'      => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'tailpress') . '</span>',
+			'after'       => '</div>',
+			'link_before' => '<span>',
+			'link_after'  => '</span>',
+			'pagelink'    => '<span class="screen-reader-text">' . __('Page', 'tailpress') . ' </span>%',
+			'separator'   => '<span class="screen-reader-text">, </span>',
+		)
+	);
+	?>
+
+<?php endif; ?>

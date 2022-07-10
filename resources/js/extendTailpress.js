@@ -8,5 +8,14 @@ module.exports = (tailpress) => {
 
     return result
   }
+  tailpress.fontFamilyMapper = (fontObject) => {
+    let result = {}
+
+    fontObject.forEach(function ({ slug, families }) {
+      result[slug] = families.join(",")
+    })
+
+    return result
+  }
   return tailpress
 }

@@ -49,19 +49,19 @@
           "name": "Primary",
           "slug": "primary",
           "color": "rgba(var(--primary) , <alpha-value>)",
-          "default": "#175164"
+          "default": "#ee3124"
         },
         {
           "name": "Secondary",
           "slug": "secondary",
           "color": "rgba(var(--secondary) , <alpha-value>)",
-          "default": "#447B83"
+          "default": "#3d1cce"
         },
         {
           "name": "Light",
           "slug": "light",
           "color": "rgba(var(--light) , <alpha-value>)",
-          "default": "#F8F7F1"
+          "default": "#757575"
         },
         {
           "name": "Accent",
@@ -90,36 +90,11 @@
       ]
     },
     "typography": {
-      "lineHeight": [
+      "fontFamily": [
         {
-          "name": "Tightest",
-          "slug": "tighter",
-          "size": "15px"
-        },
-        {
-          "name": "Tight",
-          "slug": "tight",
-          "size": "18px"
-        },
-        {
-          "name": "Normal",
-          "slug": "normal",
-          "size": "24px"
-        },
-        {
-          "name": "Loose",
-          "slug": "loose",
-          "size": "32px"
-        },
-        {
-          "name": "Looser",
-          "slug": "looser",
-          "size": "40px"
-        },
-        {
-          "name": "Loosest",
-          "slug": "loosest",
-          "size": "50px"
+          "name": "Poppins",
+          "slug": "poppins",
+          "families": ["Poppins", "Roboto", "sans-serif"]
         }
       ],
       "fontSizes": [

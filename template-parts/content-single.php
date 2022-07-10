@@ -1,8 +1,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-content flex flex-col">
-		<?php
+	<div class="entry-content flex flex-col h-full">
+		<h1 class='text-2xl'><?php the_title(); ?></h1>
 
-		include("$theme_path/page-objects/flexible-content/main-flexible-content.php");
+		<?php
 		wp_link_pages(
 			array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'tailpress') . '</span>',

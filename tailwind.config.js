@@ -20,10 +20,12 @@ const config = {
       },
     },
     extend: {
+      fontFamily: tailpress.fontFamilyMapper(
+        tailpress.theme("settings.typography.fontFamily", theme)
+      ),
       colors: {
         ...tailpress.colorMapper(tailpress.theme("settings.color.palette", theme)),
       },
-      lineHeight: tailpress.sizeMapper(tailpress.theme("settings.typography.lineHeight", theme)),
       fontSize: tailpress.fontSizeMapper(tailpress.theme("settings.typography.fontSizes", theme)),
       spacing: tailpress.sizeMapper(tailpress.theme("settings.spacing", theme)),
     },

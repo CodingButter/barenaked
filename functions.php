@@ -17,11 +17,12 @@ include_once('functions/content-edit-page.php');
 
 include_once('functions/register-required-plugins.php');
 
+include_once('functions/initialize-theme.php');
+
 include_once('functions/required-plugins.php');
 
 include_once('functions/acf-options-pages.php');
 
 include_once('functions/responsive-images.php');
-
 
 include_once('functions/color-palette.php');
